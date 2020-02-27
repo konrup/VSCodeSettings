@@ -1,0 +1,46 @@
+{
+	"Initialize new class with a main method": {
+		"prefix": "init",
+		"body": [
+			"class $1 {",
+			"\tpublic static void main(String[] args) {",
+			"\t\t$0",
+			"\t}",
+			"}"
+		],
+		"description": "Initiiert eine neue Klasse, inklusive Main-Methode"
+	},
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"System.out.println(\"${1:Hello World!}\");$0"
+		],
+		"description": "Konsolenausgabe"
+	},
+	"Not implemented": {
+		"prefix": "notimplemented",
+		"body": "throw new UnsupportedOperationException(\"Not implemented yet\");",
+		"description": "Exception, wenn Code noch nicht vorhanden"
+	},
+	"Initialize a new JavaCC Parser": {
+		"prefix": "parser",
+		"body": [
+			"PARSER_BEGIN($1)",
+			"public class $1 {",
+			"\tpublic static void main(String args[]) throws ParseException {",
+			"\t\t$1 parser = new $1(System.in);",
+			"\t\tparser.S();",
+			"\t}",
+			"}",
+			"PARSER_END($1)",
+			"SKIP : { \" \" | \"\\t\" | \"\\n\" | \"\\r\" }",
+			"void S() :",
+			"{}",
+			"{",
+			"\t$0",
+			"\t<EOF>",
+			"}"
+		],
+		"description": "Standardlayout für einene neue .jj"
+	}
+}

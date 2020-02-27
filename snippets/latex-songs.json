@@ -1,0 +1,19 @@
+{
+	"Standard Template": {
+		"prefix": "loadStandardTemplate",
+		"body": [
+			"\\documentclass[halfparskip,12pt,a4]{scrreprt}   % Deutsches Format",
+			"\\usepackage[utf8]{inputenc}                     % Umlaute",
+			"% \\usepackage{blindtext}                        % Beispieltext",
+			"\\usepackage[ngerman]{babel}                     % Neue deutsche Rechtschreibung",
+			"\\begin{document}",
+			"\\tableofcontents",
+			"\\listoffigures",
+			"\\listoftables",
+			"${1:Das ist mein erstes Dokument!}",
+			"${2}",
+			"\\end{document}"
+		],
+		"description": "Generiert eine einfache Dokumentenvorlage"
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"unicode_dot": {
+		"description": "●",
+		"prefix": "_dot",
+		"body": ["●"]
+	},
+	"unicode_rarr": {
+		"description": "→",
+		"prefix": "_rarr",
+		"body": ["→"]
+	},
+	"unicode_Rarr": {
+		"description": "⇒",
+		"prefix": "_Rarr",
+		"body": ["⇒"]
+	},
+	"unicode_see": {
+		"description": "⪧",
+		"prefix": "_see",
+		"body": ["⪧"]
+	},
+	"unicode_check": {
+		"description": "✓",
+		"prefix": "_check",
+		"body": ["✓"]
+	},
+	"page_break": {
+		"description": "page break",
+		"prefix": "_pagebreak",
+		"body": ["<p style=\"page-break-after:always;\"></p>"]
+	}
+}

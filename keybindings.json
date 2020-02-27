@@ -1,0 +1,81 @@
+[
+    {
+        // Tab through all open terminals
+        "key": "ctrl+`",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        // Tab through all open terminals
+        "key": "ctrl+`",
+        "command": "workbench.action.terminal.focus",
+        "when": "!terminalFocus"
+    },
+    {
+        // Kill active terminal window
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.terminal.kill"
+    },
+    {
+        // Maximize terminal window
+        "key": "ctrl+0",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        // Go from global settings to user settinsg
+        "key": "ctrl+oem_comma",
+        "command": "workbench.action.openWorkspaceSettings",
+        "when": "inSettingsEditor"
+    },
+    {
+        "key": "ctrl+k ctrl+oem_minus",
+        "command": "workbench.action.zoomOut"
+    },
+    {
+        "key": "ctrl+k ctrl+oem_plus",
+        "command": "workbench.action.zoomIn"
+    },
+    {
+        "key": "ctrl+oem_plus",
+        "command": "editor.unfoldRecursively"
+    },
+    {
+        "key": "ctrl+oem_minus",
+        "command": "editor.foldRecursively"
+    },
+    {
+        "key": "ctrl+oem_2",
+        "command": "editor.unfold"
+    },
+    {
+        "key": "shift+alt+r",
+        "command": "revealFileInOS",
+    },
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.tasks.runTask"
+    },
+    {
+        "key": "alt+enter",
+        "command": "todo.toggleBox",
+        "when": "editorTextFocus && editorLangId == 'todo'"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "-todo.toggleBox",
+        "when": "editorTextFocus && editorLangId == 'todo'"
+    },
+    {
+        "key": "ctrl+alt+k",
+        "command": "bookmarks.toggleLabeled"
+    },
+    {
+        "key": "ctrl+alt+k",
+        "command": "-bookmarks.toggle",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+k",
+        "command": "bookmarks.toggle"
+    }
+]
